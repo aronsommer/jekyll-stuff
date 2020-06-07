@@ -1,0 +1,17 @@
+I had the same errors on macOS Catalina.
+
+First make sure that the .bash_profile in your home directory includes this path:
+
+(Show hidden files in Finder on Catalina: cmd + shift + fn + period)
+
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+With macOS Catalina, Apple is now using Zsh as the default shell.
+
+I solved the problem with switching the default shell to Bash.
+
+Run this command in Terminal:
+
+chsh -s /bin/bash
+
+https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/
